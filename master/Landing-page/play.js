@@ -24,4 +24,16 @@ $('#submit-new-name').click(function(){
   $('.pet-name').replaceWith(`<h2> ${newKojoName} </h2>`)
 })
 
-//put request for updating name
+$(".selectable").click(function() {
+  $(".selectable").removeClass("selected");
+  $(this).addClass("selected");
+});
+
+
+
+$('.center-image').click(function() {
+  var selectedAction = $('.selected').data('action')
+  //Logic for game after this. selectedAction will be either
+  // 'feed' 'clean' or 'pet' based on the currently selected action
+  //Food: update lasteinteraction
+})

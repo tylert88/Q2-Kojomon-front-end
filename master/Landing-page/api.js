@@ -1,9 +1,9 @@
 
 //variable has to be changed to the backend once on  HEROKU
-const localhostPet = "http://localhost:3000/api/v1/pet/"
+const herokuAPI = "https://gentle-peak-99253.herokuapp.com/api/v1/"
 
 function getPetNameByPetId(id){
-  return fetch(localhostPet + id)
+  return fetch(herokuAPI + 'pet/' + id)
   .then(res => res.json())
   .then(res => res[0])
   .catch(error => console.log(error))
@@ -15,7 +15,7 @@ function updatePetNameById(id, name){
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": localhostPet + "name/" + id,
+  "url": herokuAPI + "pet/name/" + id,
   "method": "PUT",
   "headers": {
     "content-type": "application/json",
@@ -31,4 +31,11 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 
+}
+
+function getFoodInteractionTimeById(id) {
+  return fetch(herokuAPI + 'food/' + id)
+  .then(res => res.json())
+  .then(res => res[0])
+  .catch(error => console.log(error))
 }
