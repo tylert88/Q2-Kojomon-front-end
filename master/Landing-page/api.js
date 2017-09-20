@@ -29,8 +29,7 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-});
-
+})
 }
 
 function getFoodInteractionTimeById(id) {
@@ -38,4 +37,22 @@ function getFoodInteractionTimeById(id) {
   .then(res => res.json())
   .then(res => res[0])
   .catch(error => console.log(error))
+}
+
+function updateEvoScoreById(id, evoData ){
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": herokuAPI + "pet/evo/" + id,
+  "method": "PUT",
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": JSON.stringify({
+    evo_score: evoData
+  })
+}
 }

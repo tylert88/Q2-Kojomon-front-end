@@ -12,20 +12,35 @@ var dataForDummies = [
 }
 ]
 
+
 var petName = dataForDummies[0]['name']
 var evoScore = dataForDummies[0]['evo_score']
 var petId = dataForDummies[0]['id']
 var creationTime = dataForDummies[0]['creation_date']
 var loginTime = dataForDummies[0]['last_login']
-var foodInteractionTime = null;
+
 
 
 getFoodInteractionTimeById(petId).then(foodToHours)
 
 function foodToHours(time) {
-  foodInteractionTime = time['last_interaction']
+  lastFoodInteractionTime = "2017-09-20T18:39:26.148Z"/*time['last_interaction']*/
   let now = Date.now()
-  let foodInteractionTimeMil = Date.parse(foodInteractionTime)
+  let foodInteractionTimeMil = Date.parse(lastFoodInteractionTime)
+  let timeInMil = now-foodInteractionTimeMil
+  let timeInSec = timeInMil/1000
+  let timeInMin = timeInSec/60
+  let timeInHrs = timeInMin/60
+  let timeInDay = timeInHrs/24
+  let flooredHrs = Math.floor(timeInHrs)
+  console.log(flooredHrs);
+
+hoursSinceLastFoodInteraction = flooredHrs
+foodScore = (foodScoreBase - hoursSinceLastFoodInteraction)
+
 }
 
-  console.log(foodInteractionTime);
+var foodScore = null
+var lastFoodInteractionTime = null;
+var hoursSinceLastFoodInteraction = null;
+var foodScoreBase = 24;
