@@ -15,7 +15,7 @@ function appendPlantSprite(results){
   } else if (plant.evo_score >= 48) {
     $('.center-image').append(`<img src=${plantType.evo_2}/>`)
   } else {
+    $('.center-image').append(`<img src=${plantType.evo_1}/>`)
 
-    $('.center-image').append(`<img src=${plant.evo_1}/>`)
   }
 };
