@@ -3,7 +3,6 @@
 //***ID of '1' Must be changed to the id of the
 // active pet of the user who is logged in***
 
-
 getPetNameByPetId(1).then(appendPetName)
 
 $('.hidden-name-change').hide()
@@ -31,8 +30,8 @@ $(".selectable").click(function() {
 
 
 
-// $('.center-image').click(function() {
-//   var selectedAction = $('.selected').data('action')
-//   //Logic for game after this. selectedAction will be either
-//   // 'feed' 'clean' or 'pet' based on the currently selected action
-// })
+$('.center-image').click(function() {
+  var selectedAction = $('.selected').data('action')
+  //Logic for game after this. selectedAction will be either
+  // 'feed' 'clean' or 'pet' based on the currently selected action
+})
