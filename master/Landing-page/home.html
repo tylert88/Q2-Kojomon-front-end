@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="single/css/bootstrap.css">
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="single/css/style.css">
+	<!-- Any custom css done here -->
+	<link rel="stylesheet" href="assets/css/7ven-custom.css" />
 
 
 
@@ -76,9 +78,11 @@
 			<a class="to-animate" href="#">LOG OUT</a>
 			<br>
 			<br>
-			<p class="to-animate">FEED YOUR KOJO.</p>
-			<p class="to-animate">CLEAN YOUR KOJO.</p>
-			<p class="to-animate">POKE YOUR KOJO.</p>
+			<span class="interaction">
+			<p data-action="feed" class="to-animate selectable">FEED YOUR KOJO</p>
+			<p data-action="clean" class="to-animate selectable">CLEAN YOUR KOJO</p>
+			<p data-action="pet" class="to-animate selectable">PET YOUR KOJO</p>
+			</span>
 			<br>
 			<p class="to-animate"> <b>YOUR BADGES</b></p>
 			<p class="to-animate icon-battery "></p>
@@ -113,6 +117,8 @@
 	<script src="single/js/modernizr-2.6.2.min.js"></script>
 	<!-- script for api.js | Keep above all js files that use api calls |-->
 	<script src="api.js" type="text/javascript"></script>
+	<!-- Script containing variables of pet -->
+	<script type="text/javascript" src="game-variable.js"></script>
 	<!-- script for JS home.html -->
 	<script src="play.js" type="text/javascript"></script>
 
