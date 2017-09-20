@@ -3,7 +3,6 @@
 //***ID of '1' Must be changed to the id of the
 // active pet of the user who is logged in***
 
-
 getPetNameByPetId(1).then(appendPetName)
 
 $('.hidden-name-change').hide()
