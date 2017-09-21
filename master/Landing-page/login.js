@@ -1,4 +1,11 @@
 $(() => {
+
+  window.addEventListener('load', function() {
+    let mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
+
+    handleAuthentication();
+  });
+
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
     clientID: 'bUL7zF8NH51FQ10GSR7dA59361gL57zk',
@@ -15,7 +22,6 @@ window.webAuth = webAuth;
     e.preventDefault();
     webAuth.authorize();
   });
-
 
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
@@ -96,4 +102,6 @@ window.webAuth = webAuth;
   }
 
   window.getProfile = getProfile;
+
+
 });
