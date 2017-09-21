@@ -7,6 +7,7 @@ $(() => {
     scope: 'openid profile email',
     redirectUri: window.location.href
   });
+window.webAuth = webAuth;
 
   var loginBtn = document.getElementById('signin-btn');
 
@@ -33,6 +34,7 @@ $(() => {
       displayButtons();
     });
   }
+window.webAuth = webAuth;
 
   function setSession(authResult) {
     // Set the time that the access token will expire at
