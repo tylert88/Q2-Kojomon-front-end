@@ -2,7 +2,7 @@
 // active pet of the user who is logged in***
 $(()=>{
   var user = JSON.parse(localStorage.getItem('user') || '{}');
-
+  console.log(user);
   if (user.email){
     alert(user.email)
   }
