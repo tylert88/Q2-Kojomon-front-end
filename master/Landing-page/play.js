@@ -4,12 +4,9 @@ $(()=>{
   var user = JSON.parse(localStorage.getItem('user') || '{}');
   console.log('Hello' + user);
   if (user.email){
-    alert(user.email)
+    alert('Hello' + user.email)
   }
 })
-
-
-
 
 getPetNameByPetId(petId).then(appendPetName)
 
