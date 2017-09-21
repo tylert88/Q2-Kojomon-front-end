@@ -1,7 +1,7 @@
 $(() => {
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
-    clientID: 'i3epDKPFT43ECYFg-roqdCqnwKd38beQ',
+    clientID: 'bUL7zF8NH51FQ10GSR7dA59361gL57zk',
     responseType: 'token id_token',
     audience: 'https://kojomon.auth0.com/userinfo',
     scope: 'openid profile email',
