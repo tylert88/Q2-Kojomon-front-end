@@ -2,11 +2,9 @@ var userProfile;
 
 $(() => {
 
-  // window.addEventListener('load', function() {
-  //   let mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
-  //
-  //
-  // });
+
+  const mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
+
 
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
@@ -14,7 +12,7 @@ $(() => {
     responseType: 'token id_token',
     audience: 'https://kojomon.auth0.com/userinfo',
     scope: 'openid profile email',
-    redirectUri: window.location.href
+    redirectUri: mainSite
   });
 window.webAuth = webAuth;
 
