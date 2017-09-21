@@ -19,7 +19,10 @@ var petId = dataForDummies[0]['id']
 var creationTime = dataForDummies[0]['creation_date']
 var loginTime = dataForDummies[0]['last_login']
 
-
+var foodScore = null
+var lastFoodInteractionTime = null;
+var hoursSinceLastFoodInteraction = null;
+var foodScoreBase = 24;
 
 getFoodInteractionTimeById(petId).then(foodToHours)
 
@@ -37,10 +40,5 @@ function foodToHours(time) {
 
 hoursSinceLastFoodInteraction = flooredHrs
 foodScore = (foodScoreBase - hoursSinceLastFoodInteraction)
-
+console.log(foodScore);
 }
-
-var foodScore = null
-var lastFoodInteractionTime = null;
-var hoursSinceLastFoodInteraction = null;
-var foodScoreBase = 24;
