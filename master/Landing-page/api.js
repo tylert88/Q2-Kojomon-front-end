@@ -48,8 +48,6 @@ function getFoodInteractionTimeById(id) {
 }
 
 function updateEvoScoreById(id, evoData){
-
-
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -64,5 +62,7 @@ var settings = {
     evo_score: evoData
   })
 }
-
+$.ajax(settings).done(function (response) {
+  console.log(response);
+})
 }

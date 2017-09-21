@@ -34,7 +34,7 @@ window.setTimeout(
 var foodPercent = foodScore * 4.166
 console.log(foodScore);
 $('.health-bar-foreground').css("width", foodPercent + '%')
-},100)
+},300)
 
 $('.center-image').click(function() {
     var selectedAction = $('.selected').data('action')
@@ -48,6 +48,7 @@ $('.center-image').click(function() {
             console.log(foodScore);
             evoScore += 1
             console.log(evoScore);
+            console.log(petId);
             foodPercent = foodScore * 4.166
             $('.health-bar-foreground').css("width", foodPercent + '%')
 
