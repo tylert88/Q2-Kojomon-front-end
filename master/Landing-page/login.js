@@ -1,3 +1,5 @@
+var userProfile;
+
 $(() => {
 
   // window.addEventListener('load', function() {
