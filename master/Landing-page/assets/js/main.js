@@ -356,7 +356,7 @@
 								event.stopPropagation();
 
 							// Show article.
-								$main._show(location.hash.substr(1));
+								$main._show(location.search.substr(1));
 
 						}
 
@@ -392,10 +392,10 @@
 					$main_articles.hide();
 
 				// Initial article.
-					if (location.hash != ''
-					&&	location.hash != '#')
+					if (location.search != ''
+					&&	location.search != '#')
 						$window.on('load', function() {
-							$main._show(location.hash.substr(1), true);
+							$main._show(location.search.substr(1), true);
 						});
 
 	});
