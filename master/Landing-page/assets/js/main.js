@@ -333,20 +333,20 @@
 
 				});
 
-				$window.on('hashchange', function(event) {
-
-					// Empty hash?
-						if (location.hash == ''
-						||	location.hash == '#') {
-
-							// Prevent default.
-								event.preventDefault();
-								event.stopPropagation();
-
-							// Hide.
-								$main._hide();
-
-						}
+				// $window.on('hashchange', function(event) {
+				//
+				// 	// Empty hash?
+				// 		if (location.hash == ''
+				// 		||	location.hash == '#') {
+				//
+				// 			// Prevent default.
+				// 				event.preventDefault();
+				// 				event.stopPropagation();
+				//
+				// 			// Hide.
+				// 				$main._hide();
+				//
+				// 		}
 
 					// Otherwise, check for a matching article.
 						else if ($main_articles.filter(location.hash).length > 0) {
