@@ -1,11 +1,18 @@
+var userProfile;
+
 $(() => {
+
+
+  const mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
+
+
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
     clientID: 'bUL7zF8NH51FQ10GSR7dA59361gL57zk',
     responseType: 'token id_token',
     audience: 'https://kojomon.auth0.com/userinfo',
     scope: 'openid profile email',
-    redirectUri: window.location.href
+    redirectUri: mainSite
   });
 window.webAuth = webAuth;
 
@@ -16,6 +23,7 @@ window.webAuth = webAuth;
     webAuth.authorize();
   });
 
+//var homeView = document.getElementById('fh5co-portrait');
 
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
@@ -23,7 +31,7 @@ window.webAuth = webAuth;
         window.location.hash = '';
         setSession(authResult);
         loginBtn.style.display = 'none';
-        homeView.style.display = 'inline-block';
+       homeView.style.display = 'inline-block';
       } else if (err) {
         homeView.style.display = 'inline-block';
         console.log(err);
@@ -66,7 +74,7 @@ window.webAuth = webAuth;
       console.log('Auth Success', localStorage);
       loginBtn.style.display = 'none';
       //logoutBtn.style.display = 'inline-block';
-      loginStatus.innerHTML = 'You are logged in!';
+      // loginStatus.innerHTML = 'You are logged in!';
     } else {
       loginBtn.style.display = 'inline-block';
       // logoutBtn.style.display = 'none';
@@ -86,14 +94,17 @@ window.webAuth = webAuth;
       webAuth.client.userInfo(accessToken, function(err, profile) {
         if (profile) {
           userProfile = profile;
+          localStorage.setItem('user',JSON.stringify(profile));
           console.log('Great Success!!', userProfile);
-          displayProfile();
+           //displayProfile();
         }
       });
     } else {
-       displayProfile();
+       //displayProfile();
     }
   }
-
+//handleAuthentication();
   window.getProfile = getProfile;
+
+
 });
