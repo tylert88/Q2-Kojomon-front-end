@@ -1,5 +1,5 @@
 
-getPetNameByPetId(2)
+getPetNameByPetId(1)
   .then(plant => {
     return getPlantTypeById(plant.plant_type_id)
     .then(plant_type => ({plant_type, plant}))
