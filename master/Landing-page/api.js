@@ -39,7 +39,7 @@ function getFoodInteractionTimeById(id) {
   .catch(error => console.log(error))
 }
 
-function updateEvoScoreById(id, evoData ){
+function updateEvoScoreById(id, evoData){
 
 var settings = {
   "async": true,

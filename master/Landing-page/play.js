@@ -4,7 +4,7 @@
 // active pet of the user who is logged in***
 
 
-getPetNameByPetId(PetId).then(appendPetName)
+getPetNameByPetId(petId).then(appendPetName)
 
 $('.hidden-name-change').hide()
 
@@ -43,9 +43,11 @@ $('.center-image').click(function() {
     }
     else {
     foodScore +=1
+    console.log(foodScore);
     evoScore +=1
+    console.log(evoScore);
 
-    updateEvoScoreById(pedId,evoScore)
+    updateEvoScoreById(petId, evoScore)
   }
 }
 
