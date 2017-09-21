@@ -1,8 +1,6 @@
 var userProfile;
 
 $(() => {
-
-
   const mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
 
 
