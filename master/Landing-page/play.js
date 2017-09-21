@@ -8,7 +8,8 @@ getPetNameByPetId(petId).then(appendPetName)
 $('.hidden-name-change').hide()
 
 function appendPetName(pet) {
-    $('.pet-name').append(`<h2> ${pet.name} </h2>`)
+
+  $('.pet-name').append(`<h2> ${pet.name} </h2>`)
 }
 
 $('#change-name').click(function() {
@@ -55,5 +56,6 @@ $('.center-image').click(function() {
             updateEvoScoreById(petId, evoScore)
         }
     }
+
 
 })

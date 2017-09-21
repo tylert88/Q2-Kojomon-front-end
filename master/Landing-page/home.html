@@ -40,6 +40,7 @@
 		<div id="fh5co-portrait" class="to-animate">
 			<!-- HEALTH BARS -->
 			<div class="health-bar-container">
+
 			<div class="health-bar">
 			  <div class="health-label">FOOD</div>
 			    <div class="health-bar-background">
@@ -57,6 +58,7 @@
 			</div> -->
 			</div>
 
+
 			<div class="center-image"></div>
 
 		</div>
@@ -69,16 +71,16 @@
 
 
 
-<div class="pet-name">
-</div>
+			<div class="pet-name">
+			</div>
 
 
-    <button id="change-name" type="button" class="btn btn-info"> Change Kojomon Name </button>
-		<div class="hidden-name-change">
-			<input id="new-name-input"type="text" name="" value="">
-			<button <input id="submit-new-name"type="button" class="btn btn-info" value="">Submit</button>
+			<button id="change-name" type="button" class="btn btn-info"> Change Kojomon Name </button>
+			<div class="hidden-name-change">
+				<input id="new-name-input" type="text" name="" value="">
+				<button <input id="submit-new-name" type="button" class="btn btn-info" value="">Submit</button>
 
-		</div>
+			</div>
 		</div>
 		<div id="fh5co-intro">
 
@@ -111,27 +113,36 @@
 			<p data-action="pet" class="to-animate selectable">PET YOUR KOJO</p>
 			</span>
 			<br>
-			<p class="to-animate"> <b>YOUR BADGES</b></p>
-			<p class="to-animate icon-battery "></p>
-			<p class="to-animate icon-game-controller"></p>
-			<p class="to-animate icon-heart"></p>
-			<p class="to-animate icon-key"></p>
-			<!-- <ul>
-					<p class="to-animate"> <b>YOUR BADGES</b></p>
-					<p class="to-animate icon-battery"></p>
-					<p class="to-animate icon-game-controller"></p>
-					<p class="to-animate icon-heart"></p>
-					<p class="to-animate icon-key"></p>
-				</ul> -->
-			<div class="fh5co-copyright to-animate">
-			</div>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  How To Play
+				</button>
+
+
+
+				<div class="fh5co-copyright to-animate">
+				</div>
 		</div>
 
 	</div>
 
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">How To Play</h4>
+				</div>
+				<div class="modal-body">
+					<p>Kojomon is your virtual plant pet. To play, just create an account! Kojomon need love and care, in order to grow. Your Kojomon will need food and attention. To feed your Kojomon, select 'Feed Your Kojo,' then click on the plant! Do the same for attention. Keep track of your Kojomon's health by looking at the progress bars in the upper right corner.How you care for your Kojomon determines what form your plant will evovle into. If you neglect your Kojomon too much, it will wither away!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<!-- jQuery Easing -->
 	<script src="single/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
