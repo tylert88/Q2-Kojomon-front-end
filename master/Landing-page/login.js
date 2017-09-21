@@ -1,10 +1,10 @@
 $(() => {
 
-  window.addEventListener('load', function() {
-    let mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
-
-
-  });
+  // window.addEventListener('load', function() {
+  //   let mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
+  //
+  //
+  // });
 
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
@@ -31,7 +31,7 @@ window.webAuth = webAuth;
         window.location.hash = '';
         setSession(authResult);
         loginBtn.style.display = 'none';
-      //  homeView.style.display = 'inline-block';
+       homeView.style.display = 'inline-block';
       } else if (err) {
         homeView.style.display = 'inline-block';
         console.log(err);
