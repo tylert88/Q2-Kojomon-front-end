@@ -72,7 +72,7 @@
 			// Methods.
 				$main._show = function(id, initial) {
 
-					var $article = $main_articles.filter('#' + id);
+					//var $article = $main_articles.filter('#' + id);
 
 					// No such article? Bail.
 						if ($article.length == 0)
