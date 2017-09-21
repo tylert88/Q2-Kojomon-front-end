@@ -70,6 +70,10 @@
 
 	}
 
+	/*body {
+		background: #1b1f22;
+	}*/
+
 	body {
 		background: #1b1f22;
 	}
@@ -1082,6 +1086,11 @@
 			z-index: 2;
 		}
 
+		/* Image for home page can be edited below in this format with another image:
+		< original --> background-image: url("../../images/sprout.jpg"); -->*/
+		/* mountains game --> background-image: url("master/Landing-page/images/pixel_art-mountains.png");*/
+
+
 		#bg:after {
 			-moz-transform: scale(1.125);
 			-webkit-transform: scale(1.125);
@@ -1091,7 +1100,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/sprout.jpg");
+			background-image: url("../../images/pixel_art-mountains.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;

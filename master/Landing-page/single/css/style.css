@@ -161,7 +161,7 @@ p {
   margin: 0 0 1.5em 0;
 }
 #fh5co-portrait .overlay {
-  background: #2595ff;
+  background-image: url("http://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");
   opacity: .5;
   position: absolute;
   top: 0;
@@ -294,7 +294,10 @@ p {
 
 
 
-/*CUSTOM STYLE EDITS */
+/*CUSTOM STYLE EDITS to home.html page
+background image for home page can be found below*/
+
+
 
 .center-image {
 			-moz-transform: scale(1.125);
@@ -305,7 +308,10 @@ p {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("https://maxpull-tlu7l6lqiu.stackpathdns.com/wp-content/uploads/2017/04/rubber-plant-936x1024.jpg");
+<<<<<<< HEAD
+			/*background-image: url("http://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");*/
+=======
+>>>>>>> 4e60ed8f165a073e44006da0ac9a88e88043e27a
 			background-position: center;
 			background-size: contain;
 			background-repeat: no-repeat;
