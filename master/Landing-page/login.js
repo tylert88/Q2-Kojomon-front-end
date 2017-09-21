@@ -96,12 +96,13 @@ window.webAuth = webAuth;
       webAuth.client.userInfo(accessToken, function(err, profile) {
         if (profile) {
           userProfile = profile;
+          localStorage.setItem('user',JSON.stringify(profile));
           console.log('Great Success!!', userProfile);
-           displayProfile();
+           //displayProfile();
         }
       });
     } else {
-       displayProfile();
+       //displayProfile();
     }
   }
 //handleAuthentication();
