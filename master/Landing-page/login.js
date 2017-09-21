@@ -4,7 +4,7 @@ $(() => {
     clientID: 'i3epDKPFT43ECYFg-roqdCqnwKd38beQ',
     responseType: 'token id_token',
     audience: 'https://kojomon.auth0.com/userinfo',
-    scope: 'openid',
+    scope: 'openid profile email',
     redirectUri: window.location.href
   });
   
@@ -84,14 +84,18 @@ $(() => {
       webAuth.client.userInfo(accessToken, function(err, profile) {
         if (profile) {
           userProfile = profile;
-          displayProfile();
+          console.log('Great Success!!', userProfile)
+          //displayProfile();
         }
       });
     } else {
-      displayProfile();
+      // displayProfile();
     }
   }
+  
+  window.getProfile = getProfile;
 
 
 
 })
+
