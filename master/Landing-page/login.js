@@ -7,15 +7,15 @@ $(() => {
     scope: 'openid profile email',
     redirectUri: window.location.href
   });
-  
-  var loginBtn = document.getElementById('signin');
+
+  var loginBtn = document.getElementById('signin-btn');
 
   loginBtn.addEventListener('click', function(e) {
     e.preventDefault();
     webAuth.authorize();
   });
-  
-  
+
+
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
       if (authResult && authResult.accessToken && authResult.idToken) {
@@ -92,10 +92,9 @@ $(() => {
       // displayProfile();
     }
   }
-  
+
   window.getProfile = getProfile;
 
 
 
 })
-
