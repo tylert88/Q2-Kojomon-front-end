@@ -63,7 +63,7 @@ window.webAuth = webAuth;
 
   function displayButtons() {
     if (isAuthenticated()) {
-      console.log('Auth Success', localStorage)
+      console.log('Auth Success', localStorage);
       loginBtn.style.display = 'none';
       //logoutBtn.style.display = 'inline-block';
       loginStatus.innerHTML = 'You are logged in!';
@@ -86,17 +86,14 @@ window.webAuth = webAuth;
       webAuth.client.userInfo(accessToken, function(err, profile) {
         if (profile) {
           userProfile = profile;
-          console.log('Great Success!!', userProfile)
-          //displayProfile();
+          console.log('Great Success!!', userProfile);
+          displayProfile();
         }
       });
     } else {
-      // displayProfile();
+       displayProfile();
     }
   }
 
   window.getProfile = getProfile;
-
-
-
-})
+});
