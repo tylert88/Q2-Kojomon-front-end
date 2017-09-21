@@ -1,6 +1,6 @@
 
 //variable has to be changed to the backend once on  HEROKU
-const localhostPet = "http://localhost:3000/api/v1/pet/"
+const localhostPet = "https://gentle-peak-99253.herokuapp.com/api/v1/pet/"
 
 function getPetNameByPetId(id){
   return fetch(localhostPet + id)
