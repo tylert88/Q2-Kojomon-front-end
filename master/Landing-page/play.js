@@ -3,7 +3,12 @@
 //***ID of '1' Must be changed to the id of the
 // active pet of the user who is logged in***
 
+<<<<<<< HEAD
+
+getPetNameByPetId(petId).then(appendPetName)
+=======
 getPetNameByPetId(1).then(appendPetName)
+>>>>>>> 6565eb95af17365575508ac34852ad1cad0104fb
 
 $('.hidden-name-change').hide()
 
@@ -19,8 +24,13 @@ $('#change-name').click(function() {
 $('#submit-new-name').click(function(){
   let newKojoName = $('#new-name-input').val()
 
+<<<<<<< HEAD
+  updatePetNameById(petId,newKojoName)
+  $('.pet-name').replaceWith(`<h2> ${newKojoName} </h2>`)
+=======
   updatePetNameById(1,newKojoName)
   $('.pet-name').replaceWith(`<h2 class="pet-name"> ${newKojoName} </h2>`)
+>>>>>>> 6565eb95af17365575508ac34852ad1cad0104fb
 })
 
 $(".selectable").click(function() {
@@ -34,4 +44,24 @@ $('.center-image').click(function() {
   var selectedAction = $('.selected').data('action')
   //Logic for game after this. selectedAction will be either
   // 'feed' 'clean' or 'pet' based on the currently selected action
+<<<<<<< HEAD
+  //Food: update lasteinteraction
+
+  if (selectedAction === 'feed') {
+    if (foodScore >= 24){
+      alert('Good Lord! Your Kojomon will explode if you feed it anymore!')
+    }
+    else {
+    foodScore +=1
+    console.log(foodScore);
+    evoScore +=1
+    console.log(evoScore);
+
+    updateEvoScoreById(petId, evoScore)
+  }
+}
+
+
+=======
+>>>>>>> 6565eb95af17365575508ac34852ad1cad0104fb
 })
