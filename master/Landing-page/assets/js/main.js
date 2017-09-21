@@ -333,20 +333,20 @@
 
 				});
 
-				$window.on('hashchange', function(event) {
+// 				$window.on('hashchange', function(event) {
 
-					// Empty hash?
-						if (location.hash == ''
-						||	location.hash == '#') {
+// 					// Empty hash?
+// 						if (location.hash == ''
+// 						||	location.hash == '#') {
 
-							// Prevent default.
-								event.preventDefault();
-								event.stopPropagation();
+// 							// Prevent default.
+// 								event.preventDefault();
+// 								event.stopPropagation();
 
-							// Hide.
-								$main._hide();
+// 							// Hide.
+// 								$main._hide();
 
-						}
+// 						}
 
 					// Otherwise, check for a matching article.
 						else if ($main_articles.filter(location.hash).length > 0) {
@@ -356,7 +356,7 @@
 								event.stopPropagation();
 
 							// Show article.
-								$main._show(location.search.substr(1));
+								$main._show(location.hash.substr(1));
 
 						}
 
@@ -392,10 +392,10 @@
 					$main_articles.hide();
 
 				// Initial article.
-					if (location.search != ''
-					&&	location.search != '#')
+					if (location.hash != ''
+					&&	location.hash != '#')
 						$window.on('load', function() {
-							$main._show(location.search.substr(1), true);
+							$main._show(location.hash.substr(1), true);
 						});
 
 	});
