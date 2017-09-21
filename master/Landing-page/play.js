@@ -1,5 +1,14 @@
 //***ID of '1' Must be changed to the id of the
 // active pet of the user who is logged in***
+$(()=>{
+  var user = JSON.parse(localStorage.getItem('user') || '{}');
+
+  if (user.email){
+    alert(user.email)
+  }
+})
+
+
 
 
 getPetNameByPetId(petId).then(appendPetName)
