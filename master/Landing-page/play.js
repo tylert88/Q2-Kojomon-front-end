@@ -4,7 +4,7 @@ $(()=>{
   var user = JSON.parse(localStorage.getItem('user') || '{}');
   console.log('Hello ' + user);
   if (user.email){
-    alert('Hello ' + user.email)
+    // alert('Hello ' + user.email)
   }
 })
 

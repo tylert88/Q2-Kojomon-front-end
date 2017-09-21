@@ -2,9 +2,7 @@ var userProfile;
 
 $(() => {
 
-
   const mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
-
 
   var webAuth = new auth0.WebAuth({
     domain: 'kojomon.auth0.com',
@@ -23,7 +21,7 @@ window.webAuth = webAuth;
     webAuth.authorize();
   });
 
-//var homeView = document.getElementById('fh5co-portrait');
+
 
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
