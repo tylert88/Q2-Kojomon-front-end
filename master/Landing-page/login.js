@@ -74,7 +74,7 @@ window.webAuth = webAuth;
       console.log('Auth Success', localStorage);
       loginBtn.style.display = 'none';
       //logoutBtn.style.display = 'inline-block';
-      loginStatus.innerHTML = 'You are logged in!';
+      //loginStatus.innerHTML = 'You are logged in!';
     } else {
       loginBtn.style.display = 'inline-block';
       // logoutBtn.style.display = 'none';
