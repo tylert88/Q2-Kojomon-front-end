@@ -20,7 +20,7 @@ $('#submit-new-name').click(function(){
   let newKojoName = $('#new-name-input').val()
 
   updatePetNameById(1,newKojoName)
-  $('.pet-name').replaceWith(`<h2> ${newKojoName} </h2>`)
+  $('.pet-name').replaceWith(`<h2 class="pet-name"> ${newKojoName} </h2>`)
 })
 
 $(".selectable").click(function() {

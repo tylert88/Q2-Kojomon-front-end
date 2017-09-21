@@ -3,6 +3,17 @@ p.rules_bold {
 }
 
 .selected {
-  color: white;
-  background-color: #596045;
+    color: black;
+    background-color: rgb(91, 192, 222);
+    width: 70%;
 }
+h2 {
+    color: black;
+}
+
+/*i.icon-align-right{
+    color: black;
+}*/
+/*input#submit-new-name{
+    background-color: lightblue;
+}*/
