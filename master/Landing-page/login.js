@@ -102,7 +102,7 @@ window.webAuth = webAuth;
        displayProfile();
     }
   }
-handleAuthentication();
+//handleAuthentication();
   window.getProfile = getProfile;
 
 
