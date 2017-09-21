@@ -23,7 +23,7 @@ window.webAuth = webAuth;
     webAuth.authorize();
   });
 
-var homeView = document.getElementById('fh5co-portrait');
+//var homeView = document.getElementById('fh5co-portrait');
 
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
@@ -31,7 +31,7 @@ var homeView = document.getElementById('fh5co-portrait');
         window.location.hash = '';
         setSession(authResult);
         loginBtn.style.display = 'none';
-        homeView.style.display = 'inline-block';
+      //  homeView.style.display = 'inline-block';
       } else if (err) {
         homeView.style.display = 'inline-block';
         console.log(err);
@@ -74,7 +74,7 @@ window.webAuth = webAuth;
       console.log('Auth Success', localStorage);
       loginBtn.style.display = 'none';
       //logoutBtn.style.display = 'inline-block';
-      //loginStatus.innerHTML = 'You are logged in!';
+      loginStatus.innerHTML = 'You are logged in!';
     } else {
       loginBtn.style.display = 'inline-block';
       // logoutBtn.style.display = 'none';
@@ -95,11 +95,11 @@ window.webAuth = webAuth;
         if (profile) {
           userProfile = profile;
           console.log('Great Success!!', userProfile);
-          // displayProfile();
+           displayProfile();
         }
       });
     } else {
-       // displayProfile();
+       displayProfile();
     }
   }
 handleAuthentication();
