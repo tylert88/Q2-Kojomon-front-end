@@ -87,11 +87,11 @@ window.webAuth = webAuth;
         if (profile) {
           userProfile = profile;
           console.log('Great Success!!', userProfile);
-          displayProfile();
+          // displayProfile();
         }
       });
     } else {
-       displayProfile();
+       // displayProfile();
     }
   }
 
