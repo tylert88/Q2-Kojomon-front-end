@@ -53,6 +53,7 @@ $('.center-image').click(function() {
             $('.health-bar-foreground').css("width", foodPercent + '%')
 
             updateEvoScoreById(petId, evoScore)
+            updateFoodInteractionTime(petId)
         }
     }
 
