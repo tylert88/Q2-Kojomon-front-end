@@ -27,7 +27,7 @@ var foodScoreBase = 24;
 getFoodInteractionTimeById(petId).then(foodToHours)
 
 function foodToHours(time) {
-  lastFoodInteractionTime = "2017-09-20T18:39:26.148Z"/*time['last_interaction']*/
+  lastFoodInteractionTime = "2017-09-21T15:39:26.148Z"/*time['last_interaction']*/
   let now = Date.now()
   let foodInteractionTimeMil = Date.parse(lastFoodInteractionTime)
   let timeInMil = now-foodInteractionTimeMil

@@ -12,6 +12,7 @@ $(()=>{
 
 
 getPetNameByPetId(petId).then(appendPetName)
+console.log(petId);
 
 
 $('.hidden-name-change').hide()
@@ -45,11 +46,20 @@ console.log(foodScore);
 $('.health-bar-foreground').css("width", foodPercent + '%')
 },300)
 
+window.setTimeout(
+    function(){
+    if (foodScore <= 0){
+        $('.center-image').replaceWith('<img src="../imgs/headstone.png"/>')
+        alert('Your Kojomon is Dead... you F***ing MONSTER!')
+    }
+    },300)
+
 $('.center-image').click(function() {
     var selectedAction = $('.selected').data('action')
 
 
     if (selectedAction === 'feed') {
+
         if (foodScore >= 24) {
             alert('Good Lord! Your Kojomon will explode if you feed it anymore!')
         } else {
