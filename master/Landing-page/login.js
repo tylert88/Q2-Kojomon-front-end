@@ -1,10 +1,7 @@
 var userProfile;
 
 $(() => {
-<<<<<<< HEAD
-=======
 
->>>>>>> 495f263b86be4159d4faaea9a057789bc6211a09
   const mainSite = 'https://kojomon-ae289.firebaseapp.com/home.html';
 
   var webAuth = new auth0.WebAuth({
