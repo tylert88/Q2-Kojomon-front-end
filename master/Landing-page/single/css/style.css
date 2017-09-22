@@ -161,7 +161,7 @@ p {
   margin: 0 0 1.5em 0;
 }
 #fh5co-portrait .overlay {
-  background-image: url("http://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");
+  background-image: url("https://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");
   opacity: .5;
   position: absolute;
   top: 0;
@@ -309,7 +309,7 @@ background image for home page can be found below*/
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 <<<<<<< HEAD
-			/*background-image: url("http://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");*/
+			/*background-image: url("https://wallup.net/wp-content/uploads/2017/03/29/496295-pixel_art-mountains.png");*/
 =======
 >>>>>>> 4e60ed8f165a073e44006da0ac9a88e88043e27a
 			background-position: center;
