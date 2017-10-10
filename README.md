@@ -1,3 +1,10 @@
-# Q2-Kojomon-front-end
+# Kojomon
+Q2 Project 
 
-https://kojomon-ae289.firebaseapp.com/
+Team 7ven
+
+# Live site 
+https://kojomon-ae289.firebaseapp.com
+
+# Video Demo 
+https://www.youtube.com/watch?v=_S-pfblCfx4
