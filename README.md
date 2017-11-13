@@ -32,5 +32,6 @@ https://github.com/JoscelynJames/Kojomon
 * https://github.com/JoscelynJames
 * https://github.com/tylert88
 * https://github.com/jonathanherring
+* https://github.com/stroupjason
 
 
