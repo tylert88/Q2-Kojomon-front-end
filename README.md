@@ -1,6 +1,8 @@
 # Kojomon
 Q2 Project 
 
+![](https://github.com/tylert88/Q2-Kojomon-front-end/blob/master/kojomongif.gif)
+
 Team 7ven
 
 # Live site 
