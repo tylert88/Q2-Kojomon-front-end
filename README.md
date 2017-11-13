@@ -1,7 +1,8 @@
 # Kojomon
-Kojomon is a virtual pet game. Keep your pet well fed and it will evolve into a new creature! Don't forget to feed it though, or bad things might happen...
 
 ![](https://github.com/tylert88/Q2-Kojomon-front-end/blob/master/kojomonview.gif)
+
+Kojomon is a virtual pet game. Keep your pet well fed and it will evolve into a new creature! Don't forget to feed it though, or bad things might happen...
 
 
 ## Technologies
