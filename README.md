@@ -17,9 +17,6 @@ Kojomon is a virtual pet game. Keep your pet well fed and it will evolve into a 
 * Auth0
 
 
-## Live site 
-https://kojomon-ae289.firebaseapp.com
-
 ## Video Demo 
 https://www.youtube.com/watch?v=_S-pfblCfx4
 
